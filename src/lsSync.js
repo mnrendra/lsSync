@@ -24,7 +24,7 @@ const getFileProperty = (_path = '') => {
 
   const byDot = path.split('.')
   const ext = byDot.length > 1 ? byDot[byDot.length - 1] : false
-  const extention = ext ? '.' + ext : false
+  const extension = ext ? '.' + ext : false
 
   const bySlash = path.split(SLASH)
   const fileName = bySlash[bySlash.length - 1].includes('.') ? bySlash[bySlash.length - 1] : false
@@ -33,7 +33,7 @@ const getFileProperty = (_path = '') => {
   return {
     name: fileName,
     location: fileLocation,
-    extention
+    extension
   }
 }
 
@@ -60,7 +60,7 @@ const lsSync = (dir = './') => {
       type,
       directory: fileProperty.location,
       file: fileProperty.name,
-      extention: fileProperty.extention
+      extension: fileProperty.extension
     })
   })
 
