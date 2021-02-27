@@ -1,6 +1,6 @@
 {
   "name": "@mnrendra/lssync",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "To get all file informations in a directory.",
   "private": false,
   "main": "lib/index.js",
@@ -22,5 +22,20 @@
   "bugs": {
     "url": "https://github.com/mnrendra/lssync/issues"
   },
-  "homepage": "https://github.com/mnrendra/lssync#readme"
+  "homepage": "https://github.com/mnrendra/lssync#readme",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-react": "^7.12.13"
+  }
 }
